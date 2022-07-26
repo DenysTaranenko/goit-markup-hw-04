@@ -137,6 +137,7 @@ img {
   background-color: var(--hero-background);
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: url(../img/hero-bg.jpg);
 }
 .btn-container {
   text-align: center;
@@ -178,6 +179,15 @@ img {
 .soft-list {
   display: flex;
   column-gap: 30px;
+}
+.soft-photo {
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: var(--portfolio-btn-color);
 }
 .soft-item {
   list-style-type: none;
@@ -256,6 +266,38 @@ img {
   color: var(--secondary-text-color);
   letter-spacing: 0.03em;
   padding-bottom: 30px;
+}
+.clients-head {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.clients {
+}
+.image {
+  fill: currentColor;
+}
+.clients-list {
+  display: flex;
+  column-gap: 30px;
+  justify-content: center;
+}
+.clients-item {
+  list-style-type: none;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+.clients-item:hover,
+.clients-item:focus .image {
+  border-color: #2196f3;
+  color: #2196f3;
+}
+.clients-link {
 }
 /* Portfolio Main Classes */
 .portfolio-nav-list {
