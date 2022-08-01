@@ -75,6 +75,14 @@ img {
   display: flex;
   column-gap: 50px;
 }
+.header-icon {
+  margin-right: 10px;
+  fill: #757575;
+}
+.header-mail-link:hover,
+.header-phone-link:hover .header-icon {
+  fill: #2196f3;
+}
 .header-item {
   font-style: normal;
   font-weight: 500;
@@ -197,6 +205,16 @@ img {
   list-style-type: none;
   width: 270px;
 }
+.soft-icon-block {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 .soft-head {
   font-weight: 700;
   font-size: 14px;
@@ -263,7 +281,7 @@ img {
 .team-soc-list {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  column-gap: 10px;
   margin-bottom: 30px;
 }
 .team-soc-item {
@@ -273,10 +291,18 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: aqua;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .team-icon {
+  fill: #afb1b8;
+}
+.team-soc-link:hover .team-icon {
+  fill: #ffff;
+}
+.team-soc-link:hover {
+  background-color: #2196f3;
 }
 .team.block {
   padding-top: 30px;
@@ -287,7 +313,6 @@ img {
   line-height: 1.18;
   color: var(--secondary-text-color);
   letter-spacing: 0.03em;
-  padding-bottom: 30px;
   margin-bottom: 16px;
 }
 .clients-head {
@@ -298,29 +323,31 @@ img {
   margin-bottom: 50px;
   text-align: center;
 }
-.clients {
-}
-.image {
-  fill: currentColor;
-}
 .clients-list {
   display: flex;
-  column-gap: 30px;
   justify-content: center;
+  column-gap: 30px;
+  list-style-type: none;
 }
 .clients-item {
-  list-style-type: none;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  padding: 16px 32px;
-}
-
-.clients-item:hover,
-.clients-item:focus .image {
-  border-color: #2196f3;
-  color: #2196f3;
 }
 .clients-link {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clients-icon {
+  fill: #afb1b8;
+}
+.clients-link:hover .clients-icon {
+  fill: #2196f3;
+}
+.clients-link:hover {
+  border-color: #2196f3;
 }
 /* Portfolio Main Classes */
 .portfolio-nav-list {
@@ -392,6 +419,10 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
 .footer-logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -457,4 +488,43 @@ img {
   color: #ffffff;
   text-decoration: none;
   letter-spacing: 0.03em;
+}
+.footer-con-head {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.footer-con-list {
+  display: flex;
+  list-style-type: none;
+  column-gap: 10px;
+}
+.footer-con-item {
+}
+.footer-con-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer-con-icon {
+  fill: #ffff;
+}
+.footer-con-link:hover {
+  background-color: #2196f3;
+}
+.footer-con-block {
+  margin-left: 70px;
+  width: 206px;
+}
+.footer-left {
+  width: auto;
 }
